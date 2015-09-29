@@ -1,8 +1,8 @@
 // Our Calculation Function
-var add = function (answer) {
-  console.log(answer);
-  return numberInput1 + numberInput2;
-}
+var calculation = function add(number1, number2) {
+  console.log(add)
+  return add;
+};
 
 // Grab My Elements
 var numberInput1 = document.querySelector('#num_one');
@@ -13,15 +13,13 @@ var answerElem = document.querySelector('#answer');
 //Variable Declarartions
 var number1, number2, answerText;
 
-
 //Function to Preform the Caculation
-var calculate =function() {
-  number1 =  numberInput1.value, 
+var calculate = function() {
+  number1 =  numberInput1.value; 
   number2 = numberInput2.value;
-  answerText = answer;
+  answerText = Number(number1) + Number(number2);
   answerElem.textContent = answerText;
-
-}
+};
 
 //Button Click
 calculateBtn.addEventListener('click', calculate);
