@@ -5,8 +5,10 @@
 }
 
 .box {
+  
   height: 400; 
   width: 300;
+  border: 1px black;
 }
 
 .container h3 {
